@@ -1,0 +1,1949 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🛒 Web Scraper Results Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1 {
+      color: #ffc107;
+      font-weight: 700;
+    }
+    .table-container {
+      background-color: #f9f9f9;
+      color: #111;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="text-center mb-4">
+      <h1>🛒 Web Scraper Results Dashboard</h1>
+      <p class="text-secondary">Showing results for <b>lenovo</b></p>
+      <p><small>Generated: 2025-11-04 23:14:02</small></p>
+    </div>
+
+    <div class="mb-3 text-center">
+      <button id="lowHigh" class="btn btn-success btn-sm me-2">Sort by Price: Low → High</button>
+      <button id="highLow" class="btn btn-danger btn-sm">Sort by Price: High → Low</button>
+    </div>
+
+    <div class="table-container">
+      <table class="dataframe table table-striped table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>No</th>
+      <th>id</th>
+      <th>site</th>
+      <th>name</th>
+      <th>price</th>
+      <th>store</th>
+      <th>scraped_at</th>
+      <th>price_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>650</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹35,491</td>
+      <td>India</td>
+      <td>2025-11-04T23:12:17.535145</td>
+      <td>35491.00</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>649</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 1 Intel Celeron N4020 Windows 11 Home Laptop</td>
+      <td>₹26,490</td>
+      <td>Amazon.in</td>
+      <td>2025-11-04T23:12:17.506149</td>
+      <td>26490.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>648</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkPad E15</td>
+      <td>₹37,990</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.492519</td>
+      <td>37990.00</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>647</td>
+      <td>Google Shopping</td>
+      <td>Lenovo V15 G4 AMD Ryzen 5 7520U Laptop</td>
+      <td>₹34,990</td>
+      <td>Amazon.in</td>
+      <td>2025-11-04T23:12:17.474436</td>
+      <td>34990.00</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>646</td>
+      <td>Google Shopping</td>
+      <td>Lenovo LOQ 15IAX9 Standard Laptop (Intel Core i5-12450HX/16 GB/512 GB SSD/6 GB GeForce RTX 3050/MSOffice/Full HD), 39.62 cm - 15.6 inch, Luna Grey</td>
+      <td>₹72,490</td>
+      <td>Reliance Digital</td>
+      <td>2025-11-04T23:12:17.448479</td>
+      <td>72490.00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>645</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkPad E15</td>
+      <td>₹86,231</td>
+      <td>India</td>
+      <td>2025-11-04T23:12:17.434238</td>
+      <td>86231.00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>644</td>
+      <td>Google Shopping</td>
+      <td>Lenovo V15 G4 AMD Athlon Silver 7120U Laptop</td>
+      <td>₹25,979</td>
+      <td>Amazon.in</td>
+      <td>2025-11-04T23:12:17.409897</td>
+      <td>25979.00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>643</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad 1 14" Intel Celeron N4020 Laptop</td>
+      <td>₹26,240</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.387082</td>
+      <td>26240.00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>642</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹52,690</td>
+      <td>India</td>
+      <td>2025-11-04T23:12:17.369260</td>
+      <td>52690.00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>641</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 5 Intel Core 5 Laptop</td>
+      <td>₹64,990</td>
+      <td>Croma</td>
+      <td>2025-11-04T23:12:17.352765</td>
+      <td>64990.00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>640</td>
+      <td>Google Shopping</td>
+      <td>Lenovo V14 Refurbished Laptop 82tsxa</td>
+      <td>₹23,440</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:12:17.337046</td>
+      <td>23440.00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>639</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Thinkpad E14 Amd Ryzen 5 7530u 14" WUXGA IPS 300 Nits Thin And Light Laptop</td>
+      <td>₹52,990</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.319392</td>
+      <td>52990.00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>638</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga Slim 7 14IMH9 Intel Core Ultra Laptop</td>
+      <td>₹94,990</td>
+      <td>Digital</td>
+      <td>2025-11-04T23:12:17.302723</td>
+      <td>94990.00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>637</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Legion 5 Gaming Laptop</td>
+      <td>₹18,998</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.272900</td>
+      <td>18998.00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>636</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹18,998</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.253983</td>
+      <td>18998.00</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>635</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Laptops</td>
+      <td>₹18,998</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:12:17.234116</td>
+      <td>18998.00</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>634</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹15,000</td>
+      <td>Amazon.in</td>
+      <td>2025-11-04T23:12:17.211434</td>
+      <td>15000.00</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>633</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹15,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:12:17.192511</td>
+      <td>15000.00</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>632</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Laptops</td>
+      <td>₹15,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:12:17.167161</td>
+      <td>15000.00</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>631</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga 6 2-in-1 Laptop</td>
+      <td>₹1,20,336</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:58.843830</td>
+      <td>120336.00</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>630</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkCentre Neo 50s Gen 5 Desktop</td>
+      <td>₹49,630</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:58.805995</td>
+      <td>49630.00</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>629</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Legion 5 Gaming Laptop</td>
+      <td>₹76,110</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:58.756831</td>
+      <td>76110.00</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>628</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 5 Gen 10 Laptop</td>
+      <td>₹40,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:58.727527</td>
+      <td>40490.00</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>627</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹25,000</td>
+      <td>amazon.in</td>
+      <td>2025-11-04T23:11:58.693884</td>
+      <td>25000.00</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>626</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹25,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:11:58.671885</td>
+      <td>25000.00</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>625</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga 6 2-in-1 Laptop</td>
+      <td>₹25,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:11:58.649027</td>
+      <td>25000.00</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>624</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga 6 2-in-1 Laptop</td>
+      <td>₹45,990</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:11:38.101652</td>
+      <td>45990.00</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>623</td>
+      <td>Google Shopping</td>
+      <td>lenovo.com</td>
+      <td>₹46,991</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:38.080523</td>
+      <td>46991.00</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>622</td>
+      <td>Google Shopping</td>
+      <td>Lenovo LOQ Gen 9, 39.62cms - AMD R5 (Luna Grey)</td>
+      <td>₹72,990</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:11:38.057271</td>
+      <td>72990.00</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>621</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 3 15.6" Full HD AMD Ryzen 3 Laptop</td>
+      <td>₹33,490</td>
+      <td>Digital</td>
+      <td>2025-11-04T23:11:38.040227</td>
+      <td>33490.00</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>620</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹44,490</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:38.017505</td>
+      <td>44490.00</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>619</td>
+      <td>Google Shopping</td>
+      <td>lenovo.com</td>
+      <td>₹62,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:37.991953</td>
+      <td>62490.00</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>618</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹99,821</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.969335</td>
+      <td>99821.00</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>617</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Pro 5 Laptop</td>
+      <td>₹82,329</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.944341</td>
+      <td>82329.00</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>616</td>
+      <td>Google Shopping</td>
+      <td>Lenovo V15 AMD Ryzen 7 7730U Laptop</td>
+      <td>₹42,490</td>
+      <td>Amazon.in</td>
+      <td>2025-11-04T23:11:37.913952</td>
+      <td>42490.00</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>615</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹1,19,381</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.850282</td>
+      <td>119381.00</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>614</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga 6 2-in-1 Laptop</td>
+      <td>₹1,19,381</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.802178</td>
+      <td>119381.00</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>613</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹1,20,336</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.776514</td>
+      <td>120336.00</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>612</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Ideapad 3 82rk019gin Standard Laptop</td>
+      <td>₹34,499</td>
+      <td>off Reliance</td>
+      <td>2025-11-04T23:11:37.754612</td>
+      <td>34499.00</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>611</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹58,090</td>
+      <td>India Free</td>
+      <td>2025-11-04T23:11:37.743615</td>
+      <td>58090.00</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>610</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹84,405</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.727941</td>
+      <td>84405.00</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>609</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Legion Pro 5 Gaming Laptop</td>
+      <td>₹1,57,321</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.711804</td>
+      <td>157321.00</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>608</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹60,991</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.691108</td>
+      <td>60991.00</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>607</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga Slim 9 Intel Core Ultra 7 Laptop</td>
+      <td>₹1,91,200</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.674247</td>
+      <td>191200.00</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>606</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkBook 16 Gen 6 21kkxa08in</td>
+      <td>₹29,990</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:11:37.648679</td>
+      <td>29990.00</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>605</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkBook 14" AMD Ryzen 5 7535HS Laptop</td>
+      <td>₹45,991</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.629279</td>
+      <td>45991.00</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>604</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹45,991</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.609831</td>
+      <td>45991.00</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>603</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Legion 5 Gaming Laptop</td>
+      <td>₹47,890</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:11:37.586267</td>
+      <td>47890.00</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>602</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹35,090</td>
+      <td>India Free</td>
+      <td>2025-11-04T23:11:37.560676</td>
+      <td>35090.00</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>601</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹1,01,963</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.544132</td>
+      <td>101963.00</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>600</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Pro 5 Gen 10 83jncto1wwin1</td>
+      <td>₹86,801</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.528530</td>
+      <td>86801.00</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>599</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad 1 14" Intel Celeron N4020 Laptop</td>
+      <td>₹22,340</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.512323</td>
+      <td>22340.00</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>598</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkBook 16 Gen 8 21s</td>
+      <td>₹60,700</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.494974</td>
+      <td>60700.00</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>597</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Flex 5 14" Intel Core i3 1315U Laptop</td>
+      <td>₹56,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:37.472598</td>
+      <td>56990.00</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>596</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 5i Intel Laptop</td>
+      <td>₹63,641</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.457358</td>
+      <td>63641.00</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>595</td>
+      <td>Google Shopping</td>
+      <td>Lenovo ThinkPad E14</td>
+      <td>₹31,990</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.437868</td>
+      <td>31990.00</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>594</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Legion 5 Gaming Laptop</td>
+      <td>₹31,990</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.417332</td>
+      <td>31990.00</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>593</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹76,110</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.386517</td>
+      <td>76110.00</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>592</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Slim 5 Gen 10 Laptop</td>
+      <td>₹65,253</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.375169</td>
+      <td>65253.00</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>591</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Flex 5 14" Intel Core i5 Laptop</td>
+      <td>₹59,890</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.352938</td>
+      <td>59890.00</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>590</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹86,231</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.335883</td>
+      <td>86231.00</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>589</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹1,24,990</td>
+      <td>India</td>
+      <td>2025-11-04T23:11:37.320094</td>
+      <td>124990.00</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>588</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹49,690</td>
+      <td>India Free</td>
+      <td>2025-11-04T23:11:37.296978</td>
+      <td>49690.00</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>587</td>
+      <td>Google Shopping</td>
+      <td>Lenovo FHD 15.6" LOQ Gaming Laptop AMD Ryzen 7 7435hs</td>
+      <td>₹59,190</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.277522</td>
+      <td>59190.00</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>586</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga Slim 7 Pro 14" Intel Core i5 Laptop</td>
+      <td>₹48,390</td>
+      <td>Free delivery</td>
+      <td>2025-11-04T23:11:37.263741</td>
+      <td>48390.00</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>585</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Tab Plus Wi-Fi</td>
+      <td>₹18,998</td>
+      <td>Lenovo</td>
+      <td>2025-11-04T23:11:37.247486</td>
+      <td>18998.00</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>584</td>
+      <td>Google Shopping</td>
+      <td>lenovo.com</td>
+      <td>₹40,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:37.230439</td>
+      <td>40490.00</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>583</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹40,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:37.205420</td>
+      <td>40490.00</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>582</td>
+      <td>Google Shopping</td>
+      <td>Lenovo Yoga 6 2-in-1 Laptop</td>
+      <td>₹40,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:37.188065</td>
+      <td>40490.00</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>581</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Laptops</td>
+      <td>₹40,490</td>
+      <td>lenovo.com</td>
+      <td>2025-11-04T23:11:37.162892</td>
+      <td>40490.00</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>580</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹60,000</td>
+      <td>amazon.in</td>
+      <td>2025-11-04T23:11:37.142700</td>
+      <td>60000.00</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>579</td>
+      <td>Google Shopping</td>
+      <td>Lenovo India</td>
+      <td>₹60,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:11:37.126642</td>
+      <td>60000.00</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>578</td>
+      <td>Google Shopping</td>
+      <td>Lenovo IdeaPad Laptops</td>
+      <td>₹60,000</td>
+      <td>Mice</td>
+      <td>2025-11-04T23:11:37.104689</td>
+      <td>60000.00</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>577</td>
+      <td>Flipkart</td>
+      <td>5. Lenovo LOQ AMD Ryzen 7 Octa...</td>
+      <td>₹71,290</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.639608</td>
+      <td>71290.00</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>576</td>
+      <td>Flipkart</td>
+      <td>5. Lenovo LOQ AMD Ryzen 7 Octa...</td>
+      <td>₹76,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.550220</td>
+      <td>76990.00</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>575</td>
+      <td>Flipkart</td>
+      <td>Lenovo 46.99 cm (19 inch) Full HD TN Panel Monitor (D19...</td>
+      <td>₹5,449</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.502625</td>
+      <td>5449.00</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>574</td>
+      <td>Flipkart</td>
+      <td>Lenovo GY51C12380 Wireless Ambidextrous Optical  Gaming...</td>
+      <td>₹734</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.467540</td>
+      <td>734.00</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>573</td>
+      <td>Flipkart</td>
+      <td>Lenovo Go USB C Wireless Ambidextrous Optical Mouse</td>
+      <td>₹2,852</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.377813</td>
+      <td>2852.00</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>572</td>
+      <td>Flipkart</td>
+      <td>Lenovo 46.99 cm (19 inch) Full HD TN Panel Monitor (D19...</td>
+      <td>₹2,852</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.299149</td>
+      <td>2852.00</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>571</td>
+      <td>Flipkart</td>
+      <td>Lenovo M410 Wireless RGB Gaming Mouse Wireless Ambidext...</td>
+      <td>₹2,999</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.251696</td>
+      <td>2999.00</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>570</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ Intel Core i5 13th Gen 13450HX - (16 GB/512 ...</td>
+      <td>₹2,999</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.211566</td>
+      <td>2999.00</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>569</td>
+      <td>Flipkart</td>
+      <td>Lenovo 530 Mice Wireless Ambidextrous Optical Mouse</td>
+      <td>₹999</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.177876</td>
+      <td>999.00</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>568</td>
+      <td>Flipkart</td>
+      <td>Lenovo 530 Mice Wireless Ambidextrous Optical Mouse</td>
+      <td>₹9,899</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.138230</td>
+      <td>9899.00</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>567</td>
+      <td>Flipkart</td>
+      <td>Lenovo M210 /Upto 8000 DPI, 7 Buttons, 80 gms, 3 Zone R...</td>
+      <td>₹526</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.105215</td>
+      <td>526.00</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>566</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED Full Metal Body Intel ...</td>
+      <td>₹2,499</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.068528</td>
+      <td>2499.00</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>565</td>
+      <td>Flipkart</td>
+      <td>Lenovo T14 Gen 2 Intel Core i7 11th Gen 1165G7 - (16 GB...</td>
+      <td>₹12,199</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.031307</td>
+      <td>12199.00</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>564</td>
+      <td>Flipkart</td>
+      <td>Lenovo Legion M300s Wired Ambidextrous Optical  Gaming ...</td>
+      <td>₹945</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:16.000497</td>
+      <td>945.00</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>563</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ 2025 Intel Core i7 13th Gen 13700HX - (16 GB...</td>
+      <td>₹650</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.957299</td>
+      <td>650.00</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>562</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 6 AMD Ryzen 7 Octa Core 7730U - (16 GB/1 TB...</td>
+      <td>₹87,190</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.932613</td>
+      <td>87190.00</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>561</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED Full metal Intel Core ...</td>
+      <td>₹285</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.915556</td>
+      <td>285.00</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>560</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 3 Backlit Keyboard with MSO'2024 In...</td>
+      <td>₹10,798</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.899365</td>
+      <td>10798.00</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>559</td>
+      <td>Flipkart</td>
+      <td>Lenovo 46.99 cm (19 inch) Full HD TN Panel Monitor (D19...</td>
+      <td>₹10,798</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.864884</td>
+      <td>10798.00</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>558</td>
+      <td>Flipkart</td>
+      <td>Lenovo 46.99 cm (19 inch) Full HD TN Panel Monitor (D19...</td>
+      <td>₹250</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.832366</td>
+      <td>250.00</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>557</td>
+      <td>Flipkart</td>
+      <td>5. Lenovo LOQ AMD Ryzen 7 Octa...</td>
+      <td>₹250</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:11:15.782396</td>
+      <td>250.00</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>556</td>
+      <td>Flipkart</td>
+      <td>5. Lenovo IdeaPad Slim 5 13th ...</td>
+      <td>₹68,099</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.357931</td>
+      <td>68099.00</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>555</td>
+      <td>Flipkart</td>
+      <td>Awesome product from Lenovo... Must buy it.</td>
+      <td>₹68,099</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.341666</td>
+      <td>68099.00</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>554</td>
+      <td>Flipkart</td>
+      <td>4. Lenovo IdeaPad Slim 5 WUXGA...</td>
+      <td>₹59,900</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.327595</td>
+      <td>59900.00</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>553</td>
+      <td>Flipkart</td>
+      <td>3. Lenovo 120 wired mouse Wire...</td>
+      <td>₹290</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.307695</td>
+      <td>290.00</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>552</td>
+      <td>Flipkart</td>
+      <td>2. Lenovo 158.06 cm (62 cm) Fu...</td>
+      <td>₹12,199</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.287893</td>
+      <td>12199.00</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>551</td>
+      <td>Flipkart</td>
+      <td>1. Lenovo IdeaPad Slim 5 WUXGA...</td>
+      <td>₹76,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.262166</td>
+      <td>76990.00</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>550</td>
+      <td>Flipkart</td>
+      <td>Awesome product from Lenovo... Must buy it.</td>
+      <td>₹76,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.246139</td>
+      <td>76990.00</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>549</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 13th Gen 1340P WUXGA OLED Intel Core i5 1...</td>
+      <td>₹85,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.227930</td>
+      <td>85990.00</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>548</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED AI PC Intel Core Ultra...</td>
+      <td>₹76,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.212582</td>
+      <td>76990.00</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>547</td>
+      <td>Flipkart</td>
+      <td>Lenovo Ideapad M100 RGB Gaming Wired Ambidextrous Optic...</td>
+      <td>₹876</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.196100</td>
+      <td>876.00</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>546</td>
+      <td>Flipkart</td>
+      <td>Lenovo KBMICEBO Wired Ambidextrous Optical Mouse</td>
+      <td>₹526</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.181433</td>
+      <td>526.00</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>545</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 13th Gen 1340P WUXGA OLED Intel Core i5 1...</td>
+      <td>₹526</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.152438</td>
+      <td>526.00</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>544</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ Intel Core i5 13th Gen 13450HX - (16 GB/512 ...</td>
+      <td>₹87,490</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.136029</td>
+      <td>87490.00</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>543</td>
+      <td>Flipkart</td>
+      <td>Lenovo M210 /Upto 8000 DPI, 7 Buttons, 80 gms, 3 Zone R...</td>
+      <td>₹1,399</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.117196</td>
+      <td>1399.00</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>542</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ AMD Ryzen 5 Quad Core 7235HS - (24 GB/512 GB...</td>
+      <td>₹68,790</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.094965</td>
+      <td>68790.00</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>541</td>
+      <td>Flipkart</td>
+      <td>Lenovo 68.58 cm (27 inch) Full HD VA Panel with TUV Eye...</td>
+      <td>₹9,899</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.083001</td>
+      <td>9899.00</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>540</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ Intel Core i5 13th Gen 13450HX - (16 GB/512 ...</td>
+      <td>₹9,899</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.062791</td>
+      <td>9899.00</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>539</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga Pro 7 3K OLED AI PC Full Metal Body Intel C...</td>
+      <td>₹1,29,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.050764</td>
+      <td>129990.00</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>538</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 13th Gen Intel Core i5-13420H WUX...</td>
+      <td>₹68,099</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.034044</td>
+      <td>68099.00</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>537</td>
+      <td>Flipkart</td>
+      <td>Lenovo Legion M300s Wired Ambidextrous Optical  Gaming ...</td>
+      <td>₹2,499</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:33.014622</td>
+      <td>2499.00</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>536</td>
+      <td>Flipkart</td>
+      <td>Lenovo Idea Pad Slim 3 Intel Core i7 13th Gen 13620H - ...</td>
+      <td>₹64,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.992204</td>
+      <td>64990.00</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>535</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga Pro 7 3K OLED AI PC Full Metal Body Intel C...</td>
+      <td>₹64,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.975352</td>
+      <td>64990.00</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>534</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 WUXGA-OLED Intel Core i7 13th Gen 1360P -...</td>
+      <td>₹1,09,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.963601</td>
+      <td>109990.00</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>533</td>
+      <td>Flipkart</td>
+      <td>Lenovo WL310 Bluetooth Silent Mouse Wireless Ambidextro...</td>
+      <td>₹1,099</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.948388</td>
+      <td>1099.00</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>532</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ AMD Ryzen 7 Octa Core 7435HS - (24 GB/512 GB...</td>
+      <td>₹71,290</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.934858</td>
+      <td>71290.00</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>531</td>
+      <td>Flipkart</td>
+      <td>Lenovo Legion M300s Wired Ambidextrous Optical  Gaming ...</td>
+      <td>₹2,400</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.920613</td>
+      <td>2400.00</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>530</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 WUXGA-OLED Intel Core i7 13th Gen 1360P -...</td>
+      <td>₹2,400</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.905212</td>
+      <td>2400.00</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>529</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 55.88 cm (22 inch) Full HD LED Backlit ...</td>
+      <td>₹7,199</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.884403</td>
+      <td>7199.00</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>528</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ 2025 AMD Ryzen 7 Octa Core 250 - (24 GB/1 TB...</td>
+      <td>₹1,32,590</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.856544</td>
+      <td>132590.00</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>527</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 OLED AI PC Intel Core Ultra 5 125H - (16 ...</td>
+      <td>₹90,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.840506</td>
+      <td>90990.00</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>526</td>
+      <td>Flipkart</td>
+      <td>Lenovo Legion 60.96 cm (24 inch) Full HD LED Backlit IP...</td>
+      <td>₹10,299</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.812423</td>
+      <td>10299.00</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>525</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 55.88 cm (22 inch) Full HD LED Backlit ...</td>
+      <td>₹10,299</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.789551</td>
+      <td>10299.00</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>524</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED Full Metal Body Intel ...</td>
+      <td>₹72,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.774032</td>
+      <td>72990.00</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>523</td>
+      <td>Flipkart</td>
+      <td>Lenovo 120 wired mouse Wired Ambidextrous Optical Mouse</td>
+      <td>₹290</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.758493</td>
+      <td>290.00</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>522</td>
+      <td>Flipkart</td>
+      <td>Lenovo 130 wireless mouse Wireless Ambidextrous Optical...</td>
+      <td>₹895</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.743599</td>
+      <td>895.00</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>521</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA IPS Office 2024 Full Metal ...</td>
+      <td>₹59,900</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.731508</td>
+      <td>59900.00</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>520</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED Full Metal Body Intel ...</td>
+      <td>₹59,900</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.715503</td>
+      <td>59900.00</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>519</td>
+      <td>Flipkart</td>
+      <td>Lenovo 130 Wireless Wireless Ambidextrous Optical Mouse...</td>
+      <td>₹785</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.695627</td>
+      <td>785.00</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>518</td>
+      <td>Flipkart</td>
+      <td>Lenovo KB MICE_BO 160 Wired Combo Wired USB Standard Mu...</td>
+      <td>₹945</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.672786</td>
+      <td>945.00</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>517</td>
+      <td>Flipkart</td>
+      <td>Lenovo 158.06 cm (62 cm) Full HD VA Panel 99% sRGB, 90%...</td>
+      <td>₹12,199</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.655578</td>
+      <td>12199.00</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>516</td>
+      <td>Flipkart</td>
+      <td>Lenovo 150 Wireless Wireless Ambidextrous Optical Mouse...</td>
+      <td>₹650</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.641827</td>
+      <td>650.00</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>515</td>
+      <td>Flipkart</td>
+      <td>Lenovo 130 Wireless Wireless Ambidextrous Optical Mouse...</td>
+      <td>₹650</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.622814</td>
+      <td>650.00</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>514</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 38.1 cm (15 inch) Full HD IPS Panel wit...</td>
+      <td>₹11,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.602069</td>
+      <td>11990.00</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>513</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad 5 2-in-1 Core 5 120U WUXGA IPS Intel Cor...</td>
+      <td>₹80,490</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.583011</td>
+      <td>80490.00</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>512</td>
+      <td>Flipkart</td>
+      <td>Lenovo 120 Wired Mouse Wired Ambidextrous Optical  Gami...</td>
+      <td>₹285</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.567507</td>
+      <td>285.00</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>511</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga Slim 6 WUXGA OLED Intel Core i5 13th Gen 13...</td>
+      <td>₹74,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.552611</td>
+      <td>74990.00</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>510</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 38.1 cm (15 inch) Full HD IPS Panel wit...</td>
+      <td>₹74,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.536962</td>
+      <td>74990.00</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>509</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ Intel Core i5 13th Gen 13450HX - (16 GB/512 ...</td>
+      <td>₹79,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.522369</td>
+      <td>79990.00</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>508</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ 2025 Intel Core i7 13th Gen 13700HX - (16 GB...</td>
+      <td>₹1,48,090</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.508826</td>
+      <td>148090.00</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>507</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 5 WUXGA OLED Full metal Intel Core ...</td>
+      <td>₹79,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.493464</td>
+      <td>79990.00</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>506</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 3 Backlit Keyboard with MSO'2024 In...</td>
+      <td>₹59,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.479301</td>
+      <td>59990.00</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>505</td>
+      <td>Flipkart</td>
+      <td>Lenovo LOQ Intel Core i5 13th Gen 13450HX - (16 GB/512 ...</td>
+      <td>₹59,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.459743</td>
+      <td>59990.00</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>504</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 60.96 cm (24 inch) Full HD LED Backlit ...</td>
+      <td>₹9,850</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.438087</td>
+      <td>9850.00</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>503</td>
+      <td>Flipkart</td>
+      <td>Lenovo IdeaPad Slim 3 Backlit Keyboard with MSO'2024 In...</td>
+      <td>₹63,990</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.417400</td>
+      <td>63990.00</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>502</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 68.58 cm (27 inch) Full HD LED Backlit ...</td>
+      <td>₹10,798</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.402584</td>
+      <td>10798.00</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>501</td>
+      <td>Flipkart</td>
+      <td>Lenovo 54.61 cm (22 inch) Full HD VA Panel Monitor (L22...</td>
+      <td>₹6,499</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.386570</td>
+      <td>6499.00</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>500</td>
+      <td>Flipkart</td>
+      <td>Lenovo L-Series 60.96 cm (24 inch) Full HD LED Backlit ...</td>
+      <td>₹6,499</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.371175</td>
+      <td>6499.00</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>499</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 13th Gen 1340P WUXGA OLED Intel Core i5 1...</td>
+      <td>₹6,499</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.355386</td>
+      <td>6499.00</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>498</td>
+      <td>Flipkart</td>
+      <td>Lenovo Yoga 7 13th Gen 1340P WUXGA OLED Intel Core i5 1...</td>
+      <td>₹250</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.337700</td>
+      <td>250.00</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>497</td>
+      <td>Flipkart</td>
+      <td>Awesome product from Lenovo... Must buy it.</td>
+      <td>₹250</td>
+      <td>Flipkart</td>
+      <td>2025-11-04T23:10:32.302607</td>
+      <td>250.00</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>496</td>
+      <td>Amazon India</td>
+      <td>Lenovo Tab Plus with Octa JBL Hi-Fi Speakers| 8 GB RAM, 128 GB ROM| 11.5 Inch, 2K, 90 Hz Refresh| Wi-Fi Tablet| Android 14| 45 W Fast Charger| Built-in Kickstand| Color: Luna Grey</td>
+      <td>₹18,998</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:10:15.207018</td>
+      <td>18998.00</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>495</td>
+      <td>Amazon India</td>
+      <td>Lenovo Tab| 10.1 Inch Display| Wi-Fi Only| 4 GB RAM + 64 GB ROM (Expandable up to 1 TB)| Metal Body| Dual Speakers with Dolby Atmos| Android 14| Color: Polar Blue</td>
+      <td>₹10,999</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:10:15.190902</td>
+      <td>10999.00</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>494</td>
+      <td>Amazon India</td>
+      <td>Lenovo LOQ, Intel Core i5 13th Gen 13450HX, NVIDIA RTX 4050 6GB, 16GB RAM, 512GB SSD, 15.6"(39.6cm), Windows 11, Office Home 2024, Grey, 2.4Kg, 83DV00X4IN, 100% sRGB, 3 Mon. Game Pass Gaming Laptop</td>
+      <td>₹88,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:10:15.170953</td>
+      <td>88990.00</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>493</td>
+      <td>Amazon India</td>
+      <td>Lenovo Idea Tab Smartchoice |11" Display, 2.5K Resolution, 90Hz Refresh|8GB RAM, 256GB ROM| MediaTek Dimensity 6300| 7040mAh|4 Speakers| USB-C |Wi-Fi | Luna Grey</td>
+      <td>₹15,998</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:10:14.807564</td>
+      <td>15998.00</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>492</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Slim 7 Aura Edition Intel Core Ultra 7 258V,Copilot+ AI PC(32GB RAM/1TB SSD/14(35.5cm)/WUXGA OLED AI Now/47 Tops/Windows 11/Office Hom…</td>
+      <td>₹1,34,990.00</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.728755</td>
+      <td>134990.00</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>491</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Slim 7 Aura Edition Intel Core Ultra 5 228V,Copilot+ AI PC(32GB RAM/1TB SSD/14(35.5cm) WUXGA OLED AI Now/40 Tops/Windows 11/Office Hom…</td>
+      <td>₹1,12,990.00</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.711195</td>
+      <td>112990.00</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>490</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Slim 7 (Smartchoice) Aura Edition Intel Core Ultra 5 226V,Copilot+ AI PC(16GB RAM/1TB SSD/14(35.5cm)/WUXGA OLED/40 Top…</td>
+      <td>₹1,02,490.00</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.693430</td>
+      <td>102490.00</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>489</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Slim 7 Aura Edition Intel Core Ultra 7 258V,Copilot+ AI PC(32GB RAM/1TB SSD/14(35.5cm)/WUXGA OLED AI Now/47 Tops/Windows 11/Office Hom…</td>
+      <td>₹1,02,490.00</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.676887</td>
+      <td>102490.00</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>488</td>
+      <td>Amazon India</td>
+      <td>Lenovo LOQ 12th Gen Intel Core i5-12450HX 15.6" (39.6cm) 144Hz 300Nits FHD IPS Gaming Laptop (16GB RAM/512GB SSD/NVIDIA RTX 3050 6GB/Win 11/Office 2024/3 Mon. Game Pass/Grey/2.4Kg), 83GS00PJIN</td>
+      <td>₹69,749</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.659957</td>
+      <td>69749.00</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>487</td>
+      <td>Amazon India</td>
+      <td>Lenovo {Smartchoice} Idea Tab Pro with Pen Plus|12.7" 3K Display|144 Hz Refresh|12 GB RAM, 256 GB ROM| AI-Enabled| MediaTek Dimensity 8300|Quad JBL Speakers|10200 mAh Battery with 45 W Charger|WiFi 6e</td>
+      <td>₹30,999</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.637453</td>
+      <td>30999.00</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>486</td>
+      <td>Amazon India</td>
+      <td>Lenovo LOQ, AMD Ryzen 5 7235HS, NVIDIA RTX 3050A 4GB, 12GB RAM, 512GB SSD, 15.6"(39.6cm), 144Hz, Windows 11, Office Home 2024, Grey, 2.4Kg, 83JC00HNIN, 3 Mon. Game Pass Gaming Laptop</td>
+      <td>₹63,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.621572</td>
+      <td>63990.00</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>485</td>
+      <td>Amazon India</td>
+      <td>Lenovo V14 AMD Ryzen 3 7320U 14" (35.5cm) FHD 250 Nits Antiglare Thin and Light Laptop Lifetime (8GB DDR5/ 512GB SSD/Windows 11/ Iron Grey/1.65 Kg) 1 Year Brand Warranty / 82YTA00UIN</td>
+      <td>₹29,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:55.596372</td>
+      <td>29990.00</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>484</td>
+      <td>Amazon India</td>
+      <td>Lenovo Tab| 10.1" Display| 4G (LTE) + Wi-Fi (Calling)| 4 GB RAM + 64 GB ROM (Expandable up to 1 TB)| Metal Body| Dual Speakers with Dolby Atmos| Android 14| Color: Polar Blue</td>
+      <td>₹12,999</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.428652</td>
+      <td>12999.00</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>483</td>
+      <td>Amazon India</td>
+      <td>Lenovo LOQ, AMD Ryzen 5 7235HS, NVIDIA RTX 3050 6GB, 24GB RAM, 512GB SS SSD, 15.6"(39.6cm), Windows 11, Office Home 2024, Grey, 2.4Kg, 83JC00EFIN, 100% sRGB, 3 Mon. Game Pass Gaming Laptop</td>
+      <td>₹71,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.411454</td>
+      <td>71990.00</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>482</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 1 AMD Ryzen 5 5500U 15.6" HD Thin and Light Laptop (8GB/512GB SSD/Windows 11 Home/Office Home 2024/1 Year ADP Free/Grey/1.6Kg), 82R4011MIN</td>
+      <td>₹34,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.391256</td>
+      <td>34990.00</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>481</td>
+      <td>Amazon India</td>
+      <td>Lenovo {SmartChoice)Chromebook Intel Celeron N4500 (4GB RAM/64GB eMMC 5.1/11.6 Inch (29.46cm)/HD Display/2Wx2 Stereo Speakers/HD Camera/Chrome OS/Blue/1.21Kg), 82UY0014HA</td>
+      <td>₹13,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.376176</td>
+      <td>13990.00</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>480</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3, Intel Core 12th Gen, 8GB RAM, 512GB SSD, FHD 15.6"(39.62cm), Windows 11, Office Home 2024, Arctic Grey, 1.63Kg, 82RK01ABIN, Intel UHD Graphics, Thin & Light, 1Yr ADP Free Laptop</td>
+      <td>₹35,490</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.354708</td>
+      <td>35490.00</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>479</td>
+      <td>Amazon India</td>
+      <td>Lenovo V15 Intel Core i3 13th Gen (16GB RAM/512GB SSD/Windows 11 Home/Office 2024/Iron Grey) 15.6" FHD (1920x1080) Antiglare 250 Nits Thin & Light Laptop/1Y Onsite/1.65 kg, 83CCA08KIN</td>
+      <td>₹36,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.337093</td>
+      <td>36990.00</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>478</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad 1, 8GB RAM, 512GB SSD, HD 15.6"(39.6cm), Windows 11, Grey, 1.55Kg, 82LX00F7IN, 3 Month Game Pass Laptop</td>
+      <td>₹26,008</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.319679</td>
+      <td>26008.00</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>477</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3 12th Gen Intel Core i5-12450H 15.6 inch (39.6cm) FHD Laptop (16GB RAM/512GB SSD/Windows 11/Office Home 2024/1Yr ADP Free/Grey/1.62Kg), 83ER00KPIN/83ER00KRIN</td>
+      <td>₹46,475</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.297338</td>
+      <td>46475.00</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>476</td>
+      <td>Amazon India</td>
+      <td>Lenovo ThinkBook 16 AMD Ryzen 7 7735HS (16GB RAM/512GB SSD/Windows 11 Home/Backlit Keyboard/Fingerprint) 16" WUXGA IPS 300 Nits Thin & Light Laptop/1Y Warranty/Aluminium Top/1.7kg, 21MWA0AUIN</td>
+      <td>₹48,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.281470</td>
+      <td>48990.00</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>475</td>
+      <td>Amazon India</td>
+      <td>Lenovo V15 with AMD Ryzen 7 7730U, 15.6" FHD 250 nits Anti-Glare Display, 16GB RAM, 512GB SSD, Windows 11, MS Office Lifetime, 1.65 kg, 1-Year Warranty.</td>
+      <td>₹49,989.95</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.269174</td>
+      <td>49989.95</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>474</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3, 12th Gen Intel Core i5-12450H (16GB LPDDR5, 512GB SSD), Anti-glare, FHD 15.6"(39.6cm), Win 11, Office Home 2024, Arctic Grey, 1.62Kg, 83ER00MDIN, Thin & Light, Backlit KB Laptop</td>
+      <td>₹47,800</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.251041</td>
+      <td>47800.00</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>473</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3 13th Gen Intel Core i5-13420H 15.3 inch (38.8cm) WUXGA IPS Laptop (24GB RAM/1TB SSD/Windows 11/Office Home 2024/Backlit Keyboard/1Yr ADP Free/Grey/1.6Kg), 83K100PLIN</td>
+      <td>₹64,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.233419</td>
+      <td>64990.00</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>472</td>
+      <td>Amazon India</td>
+      <td>Lenovo Smartchoice Ideapad Slim 3 13Th Gen Intel Core I7-13620H 15.3 Inch(38.8Cm) WUXGA IPS Laptop(16GB RAM/512GB SSD/Windows 11/Office Home 2024/Backlit Keyboard/1Yr ADP Free/Grey/1.6Kg),83K100CJIN</td>
+      <td>₹68,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.215628</td>
+      <td>68990.00</td>
+    </tr>
+    <tr>
+      <td>180</td>
+      <td>471</td>
+      <td>Amazon India</td>
+      <td>Lenovo V15 AMD Ryzen 7 7730U 15.6" (39.62cm) FHD 250 Nits Antiglare Thin and Light Laptop (16GB/512GB SSD/Windows 11/Iron Grey/1.65 Kg) Grey</td>
+      <td>₹49,989.95</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.200274</td>
+      <td>49989.95</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>470</td>
+      <td>Amazon India</td>
+      <td>Lenovo V15 G4 AMD Athlon Silver 7120U Laptop 8GB LPDDR5 Ram, 512 GB SSD PCIe, Windows 11 Lifetime Validity,15.6" FHD Screen, AMD Radeon 610M, Silver, 1 Year Brand Warranty</td>
+      <td>₹25,979</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.177309</td>
+      <td>25979.00</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>469</td>
+      <td>Amazon India</td>
+      <td>Lenovo V15 G4 AMD Ryzen 5 7520U 15.6 inch FHD Laptop, AMD Graphics, 16GB DDR5 5500Mhz Ram, 512GB SSD NVMe, Windows 11, Dolby Audio, Arctic Grey, 1 Year Onsite Brand Warranty</td>
+      <td>₹34,990</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.164693</td>
+      <td>34990.00</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>468</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3 Ryzen 3 7320U 15.6 inch (39.6cm) FHD Laptop (8GB/512GB SSD/Windows 11/Office 2021/Alexa Built-in/3 Month Game Pass/Arctic Grey/1.62Kg), 82XQ008DIN</td>
+      <td>₹30,970</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.145269</td>
+      <td>30970.00</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>467</td>
+      <td>Amazon India</td>
+      <td>Lenovo IdeaPad Slim 3, AMD Ryzen 5 5625U, 16GB RAM, 512GB SSD, FHD 15.6"(39.6cm), Windows 11, Office Home 2024, Grey, 1.6Kg, 82XM00QDIN, Integrated AMD Radeon Graphics, Thin and Light Laptop</td>
+      <td>₹42,490</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.126889</td>
+      <td>42490.00</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>466</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Aura AI PC - Create Without Limits</td>
+      <td>₹42,490</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.095706</td>
+      <td>42490.00</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>465</td>
+      <td>Amazon India</td>
+      <td>Lenovo Yoga Aura AI PC - Create Without Limits</td>
+      <td>₹500</td>
+      <td>Amazon</td>
+      <td>2025-11-04T23:09:36.064133</td>
+      <td>500.00</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      var table = $('table').DataTable({
+        pageLength: 15,
+        order: [],
+        columnDefs: [
+          {
+            targets: -1, // last column = price_value
+            visible: false,
+            searchable: false,
+            type: 'num'
+          }
+        ]
+      });
+
+      // Sort buttons
+      $('#lowHigh').on('click', function() {
+        table.order([table.columns().count() - 1, 'asc']).draw();
+      });
+      $('#highLow').on('click', function() {
+        table.order([table.columns().count() - 1, 'desc']).draw();
+      });
+    });
+  </script>
+</body>
+</html>
